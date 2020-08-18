@@ -1,0 +1,49 @@
+<bullet>•</bullet>Problem Statement: Introduction to Basic Python Commands
+
+<bullet>•Objectives:
+
+	To become familiar with fundamentals of Python
+
+	To study syntax of basic constructs in Python such as for loop, while, if...else, function, print, input etc.
+
+Theory:
+
+
+
+	What are the key features of Python?
+
+	What type of language is python?
+
+	Is indentation optional in Python? Justify your answer.
+
+	What Are The Built-In Types Available In Python?
+
+	Coding and Output:
+
+	Implement program in python for collecting 4 subject marks from user and find out average it and display result in grades.
+
+	<40: failed
+
+	>40 and <50 : C grade
+
+	>50 and <60 :B grade
+
+	>66 and <70 :A grade
+
+	>70 and < 90: A+grade
+
+	>90 : Excellent grade
+
+	2. Display the table of 5 by using for and while loop in Python.
+
+	
+
+	FAQs:
+
+	
+
+		Q1. Command to run python program.
+
+	Q2. Explain the various control structures used in python.
+
+	Q.3 Name at least 3 platforms for python implementation.

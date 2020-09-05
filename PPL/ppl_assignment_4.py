@@ -1,7 +1,7 @@
 
 # PPL Lab Assignment 4, PG43 Jaynam Modi, G3
 
-# Write a Python Program to input a Numpy Array and print it's transpose.
+# Write a Python Program to input a Numpy Array and print it's transpose and find out whether it is Symmetric or not.
 
 import numpy as np
 
@@ -41,44 +41,24 @@ else:
 	
 # PRACTICE PROBLEMS.
 
-# 1. Python Program to Swap the First and Last Value of a List.
+# 1. Python program to Add two matrices.
 
-def swap(lst):
-	lst[0], lst[-1] = lst[-1], lst[0]
-	return lst
+def addMatrix(x, y):
+	sumMatrix = x + y
+	return sumMatrix
 	
-# 2. Python Program to Find the Second Largest Number in a List Using Bubble Sort.
+# 2. Python program to multiply two matrices.
 
-def find2ndLargest(lst):
-	for i in range(2):
-		for j in range(len(lst)-1):
-			if lst[j] > lst[j+1]:
-				lst[j], lst[j+1] = lst[j+1], lst[j]
-	return lst[-2]
+def productMatrix(x, y):
+	return numpy.matmul(x, y)
 				
-# 3. Python Program to create list of Tuples with first element as the number and the Second element as the Square of the Number.
+# 3. Python program to find row-wise maximum element of matrix.
 
-def createSquareList(n):
-	return [(x, x * x) for x in range(1, n+1)]
-	
-# 4. Python Program to put Even & Odd Elements of a list into two seperate lists.
-
-def sortEvenOdd(lst):
-	return {"even":[x for x in lst if x // 2 == 0], "odd":[x for x in lst if x // 2 == 1]}
-
-# 5. Python Program to remove Duplicate Items from a list.
-
-def removeDuplicates(lst):
-	y = []
-	for x in lst:
-		if x not in y:
-			y.append(x)
-	return y
-	
-# 6. Python Program to calculate average of Numbers is list.
-
-def calcAverage(lst):
-	avg = 0
-	for x in lst:
-		avg += x
-	return(avg/len(lst))
+def maxElementInRow(arr):
+	for x in range(arr.shape[0]):
+		m = arr[x][0]
+		for y in range(arr.shape[1]):
+			if arr[x][y] > m:
+				m = arr[x][y]
+		print(" > Greatest element in Row {} is : {}".format(x+1, m))
+		
